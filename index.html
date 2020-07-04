@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fixed-body">
+  <h1>
+    <span class="loading">Loading</span>
+    Pokemon<span class="loading">...</span>
+  </h1>
+  <div class="loading">
+    <img width="300" src="https://38.media.tumblr.com/9656b9837470ff5cce3bd2ecf7d43cbc/tumblr_mw9lr1FUNx1scncwdo1_500.gif" alt="Loading">
+  </div>
+  <main class="main">
+    <div class="container flex jc-sb ai-fs">
+      <div class="filter flex mx-10"></div>
+      <input class="search mx-10" type="search" placeholder="search by name">
+    </div>
+    <div class="cards flex jc-c"></div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>

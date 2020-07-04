@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  margin: 70px 0;
+  font-size: 50px;
+}
+.container {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+}
+.main {
+  margin: auto;
+  opacity: 0;
+  transition: all .6s linear;
+}
+.filter {
+  width: 70%;
+}
+.search {
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #d0dde1;
+  padding: 10px;
+}
+.cards {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  color: #000;
+}
+
+.card {
+  width: calc(20% - 20px);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+.card__img {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.card__title {
+  display: block;
+  font-size: 20px;
+  font-weight: medium;
+  text-transform: capitalize;
+}
+.loading {
+  text-align: center;
+}
+
+.btn {
+  background-color: transparent;
+  font-size: 14px;
+  padding: 6px 16px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+.btn:hover {
+  color: #0b76d8;
+}
+
+.btn-active, .btn-active:hover {
+  background-color: #0b76d8;
+  color: #fff;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity .6s linear;
+}
+.hide {
+  opacity: 0;
+  transition: opacity .6s linear;
+}
+.fixed-body {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.ai-fs {
+  align-items: flex-start;
+}
+.mx-10 {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    width: calc(25% - 20px);
+  }
+  .card__img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(33% - 20px);
+  }
+  .card__img {
+    width: 120px;
+    height: 120px;
+  }
+  .search {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+  .filter {
+    width: 100%;
+  }
+  .card__img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+}
